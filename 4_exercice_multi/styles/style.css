@@ -1,0 +1,23 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --main-color : rgba(250, 253, 206, 0.378);
+}
+
+/* _____________ */
+/* Corps du site */
+/* _____________ */
+
+body {
+    /* display: flex;
+    align-items: center;
+    flex-direction: column; */
+    background-color: var(--main-color);
+}
+

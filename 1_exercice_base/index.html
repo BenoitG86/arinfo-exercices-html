@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice audio et vidéo HTML5</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <main>
+        <h1>Ajout de musique et de vidéos</h1>
+        <section>
+            <hgroup>
+                <h2>Musique</h2>
+                <p>Quand la musique est bonne</p>
+            </hgroup>
+
+            <audio controls>
+                <source src="audio/jasmin.ogg" type="audio/ogg" alt="Musique d'ambiance douce">
+                <source src="audio/jasmin.mp3" type="audio/mp3" alt="Musique d'ambiance douce">
+                <p>
+                    Télécharger l'audio au format
+                    <a href="audio/jasmin.mp3">MP3</a>
+                    ou
+                    <a href="audio/jasmin.ogg">OGG</a>
+                </p>
+            </audio>
+        </section>
+
+        <section>
+            <hgroup>
+                <h2>Vidéos</h2>
+                <p>Quand la ... vidéo est bonne j'imagine ?</p>
+            </hgroup>
+            
+            <video controls width="300px">
+                <source src="video/ui-design.mp4" type="video/mp4" alt="Vidéo parlant de l'UI design">
+                <p>
+                    Télécharger l'audio au format
+                    <a href="audio/ui-design.ogg">OGG</a>
+                    ou la vidéo au format
+                    <a href="video/ui-design.mp4">MP3</a>
+                </p>
+            </video>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;Benoît GRANDVAL</p>
+    </footer>
+
+</body>
+
+</html>

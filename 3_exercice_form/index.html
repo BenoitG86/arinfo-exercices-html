@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de mise en form</title>
+</head>
+
+<body>
+    <h1>Mon quinzième formulaire</h1>
+
+    <form action="" method="post">
+        <fieldset>
+            <legend>Formulaire</legend>
+            <ul>
+                <li>
+                    <fieldset>
+                        <legend>Civilité :</legend>
+                        
+                        <input type="radio" value="m" id="m" name="gender">
+                        <label for="m">Monsieur</label>
+                        <input type="radio" value="ms" id="ms" name="gender">
+                        <label for="ms">Madame</label>
+                        <input type="radio" value="mx" id="mx" name="gender">
+                        <label for="mx">Mx</label>
+                        <input type="radio" value="none" id="none" name="gender" checked>
+                        <label for="none">Aucune</label>
+                    </fieldset>
+                </li>
+                <li>
+                    <label for="name">Nom : </label>
+                    <input type="text" name="name" id="name">
+                </li>
+                <li>
+                    <label for="surname">Prénom : </label>
+                    <input type="text" name="surname" id="surname">
+                </li>
+                <li>
+                    <label for="email">Courriel : <span>*</span> </label>
+                    <input type="email" name="email" id="email" required>
+                </li>
+                <li>
+                    <label for="phone">Téléphone : </label><input type="tel" name="phone" id="phone">
+                </li>
+                <li>
+                    <select name="region" id="region">
+                        <option value="choose" selected disabled>Choissisez votre région</option>
+                        <option value="charente-maritime">Charente-Maritime</option>
+                        <option value="deux-sèvres">Deux-Sèvres</option>
+                        <option value="vienne">Vienne</option>
+                    </select>
+                </li>
+                <li>
+                    <textarea name="comment" id="comment" cols="30" rows="10"
+                        placeholder="Votre message ici..."></textarea>
+                </li>
+            </ul>
+            <input type="reset">
+            <input type="submit">
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
